@@ -243,3 +243,5 @@ END //
 DELIMITER ;
  
 CALL ordenar_por_categoria('Total', 'DESC'); 
+
+SELECT * FROM Branch  ;
