@@ -17,7 +17,15 @@ INSERT INTO Payment (IdPayment, Payment) VALUES (1, 'Ewallet'), (2, 'Cash'), (3,
 
 -- TABLAS TRANSACCIONALES: Debido al volumen de 1,000 registros, las tablas 
 -- 'Sales' y 'Sales_detail' deben ser cargadas utilizando la herramienta 
--- 'Table Data Import Wizard' de MySQL Workbench.
+-- 'Table Data Import Wizard' de MySQL Workbench. 
+-- 1. Tabla 'Sales' (14 Columnas):
+--    En el Wizard, seleccione estas 14 columnas del archivo CSV:
+--    IdInvoice, IdBranch, IdCity, IdCustomertype, IdGender, IdPayment, 
+--    Date, Time, Rating, COGS, Gross_margin_percentage, Gross_income, 
+--    Tax_5, Total.
+-- 2. Tabla 'Sales_detail' (6 Columnas):
+--    En el Wizard, seleccione estas 6 columnas del archivo CSV:
+--    IdInvoice, Product_line, Unit_price, Quantity, Tax_5, Total.
 
 -- ARCHIVO FUENTE: Se adjunta el archivo "supermarket_sales.csv" para realizar 
 -- dicha importación. El paso a paso detallado del proceso ETL y mapeo de 
